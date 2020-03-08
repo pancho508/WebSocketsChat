@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ChatApp with WebSockets</title>
     <!-- CDN para la libreria de socket io -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- el UI para el chat nota los nombres de los id's-->
     <div id="main-chat">
-        <div id="chat-window">
-            <div id="output">
-
-            </div>
-        </div>
-        <input type="text" id="handle" placeholder="Handle" />
-        <input type="text" id="message" placeholder="Mensaje" />
-        <button id="send">Enviar</button>
+      <h2>Socket Chat</h2>
+      <div id="chat-window">
+        <div id="output" class="chatOutput"></div>
+        <div id="feedback"></div>
+      </div>
+      <input type="text" id="handle" placeholder="Handle" />
+      <input type="text" id="message" placeholder="Mensaje" />
+      <button id="send">Enviar</button>
     </div>
     <!-- creamos un archivo para contener nuestro chat -->
-    <script src="/chat.js"></script>  
-</body>
+    <script src="/chat.js"></script>
+  </body>
 </html>
